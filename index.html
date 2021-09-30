@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8"/>
+        <meta  name="viewport" content="device-width initial-scale=1.0"/>
+        <title>
+            Portfólio - Patrícia Fernanda de Lima
+        </title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script src="script.js"> </script>      
+    </head>
+    <body onload="bemvindo();">
+        <p class="p1">
+            PORTFÓLIO ACADÊMICO
+        </p>
+        <br>        
+        <div class="box1">
+            <b>
+                PATRÍCIA FERNANDA DE LIMA
+            </b>
+            <p>                  
+                Acadêmica do curso de Análise e Desenvolvimento de Sistema no Instituto Federal de Rondônia. 
+                Graduada em Engenharia Ambiental pela Univerdade Federal de Rondônia (2013). 
+                Lates:  <a href="http://lattes.cnpq.br/4733007493200350" class="link"> http://lattes.cnpq.br/4733007493200350</a>                
+            </p>         
+        </div>
+        <p class="p2">
+            <b>TRABALHOS DESENVOLVIDOS</b>
+        </p>             
+        <div class="box2">
+            <p>
+                <b>Disciplina:</b> Análise e Projeto de Sistemas                       
+            </p>         
+            <p>
+                <b>Nota: </b> 100  
+            </p>
+            <p>
+                <b>Semestre: </b> 2020/1
+            </p>  
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar atividades
+                </a>
+            </p>
+        </div>
+        <div class="box2">
+            <p>
+                <b>Disciplina: </b> Algoritmos e Linguagem de Programação
+            </p>
+            <p>
+                <b>Nota: </b> 94
+            </p>
+            <p>
+                <b>Semestre: </b> 2020/1
+            </p>  
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar atividades
+                </a>
+            </p>
+        </div>
+        <div class="box2">
+            <p>
+                <b>Disciplina: </b> Banco de dados: Modelagem e Projetos
+            </p>
+                <b>Nota: </b> 100
+            </p>
+            <p>
+                <b>Semestre: </b>2020/2
+            </p>
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar atividades
+                </a>
+            </p>  
+        </div>
+        <div class="box2">
+            <p>
+                <b>Disciplina: </b> Análise Orientada a Objetos
+            </p>
+            <p>
+                <b>Nota: </b> 95
+            </p>
+            <p>
+                <b>Semestre: </b> 2020/2
+            </p>  
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar atividades
+                </a>
+            </p>
+        </div>
+        <div class="box2">
+            <p>
+                <b>Disciplina: </b> Banco de Dados: Aplicação
+            </p>
+            <p>
+                <b>Nota: </b> 100
+            </p>
+            <p>
+                <b>Semestre: </b> 2021/1
+            </p> 
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar atividades
+                </a>
+            </p> 
+        </div>
+        <div class="box2">
+            <p>
+                <b>Disciplina: </b> Padrões de Projetos
+            </p>
+            <p>
+                <b>Nota: </b> 100
+            </p>
+            <p>
+                <b>Semeste: </b> 2021/2
+            </p> 
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar atividades
+                </a>
+            </p> 
+        </div>                     
+        <div class="box3"> 
+            <p class="p2">
+                <b>CURSOS FEITOS</b>            
+            </p>
+            <div class="box4">                
+            <ul type="square">
+                <li> Lógica de programação essencial;</li>
+                <li>Introdução ao Git e GitHut;</li>
+                <li>Aprenda o que são estrutura  de dados e algoritmos;</li>
+                <li>Desenvolvendo sua aplicação com C# usando DDD;</li>
+                <li>Orientação a objetos em .NET;</li>
+                <li>Projetos ágeis com SCRUM;</li>
+                <li>Fundamentos para a criação de produtos digitais;</li>
+            </ul>
+            </div>
+            <div class="box4">
+            <ul type="square"></ul>
+                <li>Modelagem de negócios;</li>
+                <li>Fundamentos de arquitetura de sistemas;</li>
+                <li>Ptimeiros passos com .NET + C#;</li>
+                <li>SQL SERVER - criando suas primeiras consultas;</li>
+                <li>Arquitetura de sistemas avançados;</li>
+                <li>Criando um APP simples de cadastro de séries em .NET.</li>
+                <li> </li>
+            </ul>
+            </div>           
+            <p class="a1">
+                <a href="testelinks.html">
+                    Acessar certificados                
+                </a>
+            </p>            
+        </div>
+        <br>
+        <form  name="formulario" action="envio_mensagem.php"  method="POST" onSubmit= "return validarEmail();" >
+            <p>
+                <b>Sinta-se à vontade para enviar-me um e-mail.</b>
+            </p>            
+            <p>
+                <b>Seu nome:</b> <input type="text" name="name" size="41" maxlength="60" placeholder="Digite seu nome*" onkeyup="maiuscula(this)" onblur="validarNome()" required/>
+            </p>
+            <p>
+                <b>Seu e-mail:</b> <input type="text" name="email" size="40" placeholder="Digite seu e-mail" onblur = "validarEmail()" required/>
+            </p>
+            <p>
+                <b>Sua Mensagem:</b>
+                <textarea name="mensagem" rows="10" cols="40" placeholder="Mensagem*"  onkeyup="maiuscula(this)" required></textarea>       
+            </p>
+            <p class="center">
+                <input type="submit" name="btenviar"  value="Enviar" class="botao"/>
+            </p>
+        </form>
+    </body>
+</html>
